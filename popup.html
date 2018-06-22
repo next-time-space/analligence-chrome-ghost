@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+input[type=text], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=file], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: #495057;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #648d8e;
+}
+
+div {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+</style>
+
+
+<body style="width: 400px; margin: 60px auto auto auto;">
+  <img alt="Analligence Chrome Ghost" width="155" height="40 " src="./appLogo.png">
+  <h3 style="float: right; color: #1e9695">Chrome Ghost</h3>
+  <div>
+    <label>Host</label> <input type="text" id="host" placeholder="Host"> <label>File</label> <br /> <input type="file" id="file"> <input id="save" type="button" value="Save">
+  </div>
+  <div style="font-weight: bold;" id="output"></div>
+</body>
+<script src="popup.js"></script>
+</html>

@@ -1,0 +1,61 @@
+<html>
+<head>
+<style type="text/css">
+.toggle {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 62px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #707070;
+  transition: background-color ease 0.3s;
+}
+
+.toggle:before {
+  content: "on off";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  font: 10px/20px Helvetica;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-indent: -22px;
+  word-spacing: 30px;
+  color: #fff;
+  text-shadow: -1px -1px rgba(0,0,0,0.15);
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+}
+
+.toggle:checked {
+  background-color: #408ea5;
+}
+
+.toggle:checked:before {
+  left: 39px;
+}
+</style>
+</head>
+<body style="width: 200px; background-color: #93a69c">
+
+<table style="width: 100%;">
+<tr><td>Enable</td><td style="float: right;"><input id="enable" class="toggle" type="checkbox" /></td></tr>
+<tr><td colspan="2" style="cursor: pointer;" id="showOption">Option</td></tr>
+</table>
+</body>
+<script src="status.js">
+</script>
+</html>
