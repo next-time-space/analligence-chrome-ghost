@@ -2,15 +2,11 @@
 Chrome Extension: Inject JavaScript into pages.
 
 # Usage
-`git clone https://github.com/next-time-space/analligence-chrome-ghost`
+Download latest release from https://github.com/next-time-space/analligence-chrome-ghost/releases
 
-1. Chrome: Click options -> More tools -> Extensions
+1. Click on Drag downloaded crx file to Chrome to install
 
-2. Click on `LOAD UNPACKED`
-
-3. Select cloned directory.
-
-4. Click on extension -> Enable it first
+4. Click on extension `Analligence Chrome Ghost` from extension bar -> Enable it first
 
 5. Click on `Options`
 
