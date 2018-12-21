@@ -12,7 +12,7 @@ Download latest release from https://github.com/next-time-space/analligence-chro
 
 6. Enter host name. If your host starts with `www.` provide that too. Multiple host can be given by comma separated.
 
-7. Select Javascript file. 
+7. Select Javascript file or proivide URL to inject on the page.
 
 8. Save.
 
