@@ -1,7 +1,14 @@
-chrome.storage.local.get(['script', 'enabled', 'targetHost'], function(items) {
+chrome.storage.local.get(['script', 'enabled', 'targetHost', 'url'], function(items) {
   try {
     if(items.enabled &&  items.targetHost && items.targetHost.indexOf(window.location.hostname) != -1) {
-      eval(items.script);
+      if(items.url) {
+        var e = document.createElement('script');
+        e.type = 'text/javascript';
+        e.src  = items.url;
+        document.head.appendChild(e);
+      } else {
+        eval(items.script);
+      }
       console.log('Analligence Script loaded.');
     }
   } catch(e) {
